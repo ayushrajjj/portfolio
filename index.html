@@ -1,137 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ayush raj portfolio website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="dp.jpg" type="image/x-icon">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!--navbar-->
-  <nav>
-  <div class="logo"><img src="dp.jpg" alt="" class="dp"></div>
-  <ul class="nav-items">
-    <li><a href="#">Home</a></li>
-    <li><a href="about.html">about</a></li>
-    <li><a href="https://ayushrajjj.github.io/spotify-clone/">Spotify clone</a></li>
-    <li><a href="#">Contact </a></li>
-  </ul>
-</nav>
-    <!--navbar-ends-->
-    <!--hero-section-->
-    <section class="home">
-      <div class="home-content">
-        <h2>hi I'm </h2><h3 class="name">Ayush raj</h3>
-        <h2>web developer, wordpress developer</h2>
-        <hr>
-        <p>Welcome to my portfolio! I'm  a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites.</p>
-        
-        <div class="btn-box">
-          <button class="btn-1" >hire me</button>
-          <button class="btn-2">experience</button>
-        </div>
-    
-      </div>
-      <div class="img-box">
-        <img src="dp.jpg" alt="dp" class="img">
-      </div>
-    </section>
-
-    <section class="about">
-      <div class="left">
-        <img src="dp.jpg" alt="">
-      </div>
-      <div class="right">
-        <div class="about-content"><p>Welcome to my portfolio! I'm  a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites. What sets me apart is my relentless pursuit of learning, ensuring that I stay ahead in this ever-evolving field. My approach emphasizes understanding client requirements and delivering exceptional results. Explore my projects and skills to see how we can collaborate and create something extraordinary together! Let's connect and bring your digital visions to life.</p>
-        </div>
-      </div>
-      
-
-    </section>
-    <hr class="hr">
-    <section class="contact">
-      <div class="contact-left">
-        <br>
-        
-        <h3 class="contact-h3">Got a problem to solve?</h3>
-        <p class="contact-p">Get your space suit ready and tell me your ideas to develop your dream website.</p>
-        <h2 class="me">connect with me  --> </h2>
-
-      </div>
-
-      <div class="contact-right">
-
-        <form action="#" class="form">
-          <label for="name">name</label>
-          <input id="name" type="text" placeholder="enter your name">
-          <p>
-            <label for="email">email</label>
-          <input id="email" type="email" placeholder="enter your email"> 
-          </p>
-          <p></p> 
-
-          <label for="enquiry">enquiry</label>
-          <input id="enquiry" type="text" placeholder="enter your enquiry"> 
-          <p></p>
-          <button class="submit">submit</button>
-          
-        </form>
-      </div>
-    </section>
-
-<!--
-  
-    <section class="project">
-      <div class="card-slider">
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Card 1">
-          <div class="card-content">
-            <h3>Card 1</h3>
-            <p>This is the content of card 1.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Card 2">
-          <div class="card-content">
-            <h3>Card 2</h3>
-            <p>This is the content of card 2.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/300" alt="Card 3">
-          <div class="card-content">
-            <h3>Card 3</h3>
-            <p>This is the content of card 3.</p>
-          </div>
-        </div>
-      </div>
-      
-    </section>
--->
-    <!--
-<div class="footer">
+    <!-- Navbar -->
+    <nav>
+        <div class="logo"><img src="dp.jpg" alt="" class="dp"></div>
+        <ul class="nav-items" id="navItems">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://ayushrajjj.github.io/spotify-clone/">Spotify Clone</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </a>
+    </nav>
+    <!-- Navbar ends -->
+  <!--hero-section-->
+  <section class="home">
+    <div class="home-content">
+      <h2>Hi, I'm </h2><h3 class="name">Ayush Raj</h3>
+      <h2>Web Developer, WordPress Developer</h2>
       <hr>
-      <div class="left-footer">
-      <div class="logo"><p>ayush raj</p></div>
-
-      </div>
-
-
-      <div class="center-footer">
-      <h2>@made  by   <a href="ayushrajjj.github.io/resume">ayush raj</a></h2>
- 
-      </div>
-      <div class="right-footer">
-       
-
-
+      <p>Welcome to my portfolio! I'm a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites.</p>
+      <div class="btn-box">
+        <button class="btn-1">Hire Me</button>
+        <button class="btn-2">Experience</button>
       </div>
     </div>
-    -->
+    <div class="img-box">
+      <img src="dp.jpg" alt="dp" class="img">
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="left">
+      <img src="dp.jpg" class="dp">
+    </div>
+    <div class="right">
+      <div class="about-content">
+        <p>Welcome to my portfolio! I'm a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites. What sets me apart is my relentless pursuit of learning, ensuring that I stay ahead in this ever-evolving field. My approach emphasizes understanding client requirements and delivering exceptional results. Explore my projects and skills to see how we can collaborate and create something extraordinary together! Let's connect and bring your digital visions to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="hr">
+
+  <section class="contact">
+    <div class="contact-left">
+      <h3 class="contact-h3">Got a problem to solve?</h3>
+      <p class="contact-p">Get your space suit ready and tell me your ideas to develop your dream website.</p>
+      <h2 class="me">Connect with me  --> </h2>
+    </div>
+    <div class="contact-right">
+      <form action="https://formsubmit.co/vermaayushraj987@gmail.com" method="POST" class="form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email"
+        name="email"
+        placeholder="Enter your email"> 
+        <label for="enquiry">Enquiry</label>
+        <input id="enquiry" name="enquiry" type="text" placeholder="Enter your enquiry"> 
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <hr class="hr">
+
+  <section class="projects">
+      <h2 class="card-h2">Ongoing Project</h2>
+      <div class="card-container">
+        <div class="card">
+            <img src="spotify-card.webp" class="card-img">
+            <p class="card-title">Spotify Clone</p>
+            <p class="card-info">Made the clone of Spotify website using HTML & CSS...</p>
+          </div>
+        <div class="card">
+          <img src="netflix-card.webp" class="card-img">
+          <p class="card-title">Netflix Clone</p>
+          <p class="card-info">Made the clone of Netflix website using HTML & CSS...</p>
+        </div>
+        <div class="card">
+          <img src="https://imgs.search.brave.com/1EY6Oo4ENVKGuwmEWl17wgXJCYpxWkrLI3prmug6aTQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly92aXN1/YWxoaWVyYXJjaHku/Y28vd3AtY29udGVu/dC91cGxvYWRzLzIw/MTgvMDQvYW1hem9u/LmpwZw" class="card-img">
+          <p class="card-title">Amazon Clone</p>
+          <p class="card-info">This area will get updated when the project is ready...</p>
+        </div>
+        <div class="card">
+          <img src="card4img.jpeg" class="card-img">
+          <p class="card-title">Coming Soon</p>
+          <p class="card-info">This area will get updated when the project is ready...</p>
+        </div>
+        <div class="card">
+          <img src="card2img.jpeg" class="card-img">
+          <p class="card-title">Coming Soon</p>
+          <p class="card-info">This area will get updated when the project is ready...</p>
+        </div>
+        <div class="card">
+          <img src="card3img.jpeg" class="card-img">
+          <p class="card-title">Coming Soon</p>
+          <p class="card-info">This area will get updated when the project is ready...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">
     
-
-
-
-
+    <div class="left-footer">
+      <div class="logo">
+        <p>Ayush Raj</p>
+      </div>
+    </div>
+    <div class="center-footer">
+      <h2>@Made by <a href="https://github.com/ayushrajjj">Ayush Raj</a></h2>
+    </div>
+    <div class="right-footer">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/ayush-raj-b47927212/" target="_blank" class="social-link">LinkedIn</a>
+        <a href="#" target="_blank" class="social-link">GitHub</a>
+        <a href="https://www.instagram.com/verma_ayush7/" target="_blank" class="social-link">Instagram</a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function toggleNav() {
+        const navItems = document.getElementById('navItems');
+        navItems.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
