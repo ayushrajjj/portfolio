@@ -73,7 +73,12 @@ nav {
         color: white;
     }
 }
-
+@media (max-width: 769px) {
+    .about .dp:nth-of-type(2) {
+        width: 100%;
+        height: auto;
+    }
+}
 /* Desktop styles */
 @media (min-width: 769px) {
     .icon {
