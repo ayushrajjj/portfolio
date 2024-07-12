@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="dp.jpg" type="image/x-icon">
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="portfoio.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
@@ -27,10 +30,10 @@
   <!--hero-section-->
   <section class="home">
     <div class="home-content">
-      <h2>Hi, I'm </h2><h3 class="name">Ayush Raj</h3>
-      <h2>Web Developer, WordPress Developer</h2>
-      <hr>
-      <p>Welcome to my portfolio! I'm a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites.</p>
+      <div class="info"><h2>Hi, I'm </h2><h3 class="name">Ayush Raj</h3>
+        <h2>Web Developer, WordPress Dev.</h2>
+        <hr>
+      </div>
       <div class="btn-box">
         <button class="btn-1">Hire Me</button>
         <button class="btn-2">Experience</button>
@@ -40,14 +43,15 @@
       <img src="dp.jpg" alt="dp" class="img">
     </div>
   </section>
-
+  <hr height="50px">
   <section class="about">
     <div class="left">
       <img src="dp.jpg" class="dp">
     </div>
     <div class="right">
       <div class="about-content">
-        <p>Welcome to my portfolio! I'm a BCA student deeply passionate about web development. I thrive on transforming ideas into visually appealing and fully functional websites. What sets me apart is my relentless pursuit of learning, ensuring that I stay ahead in this ever-evolving field. My approach emphasizes understanding client requirements and delivering exceptional results. Explore my projects and skills to see how we can collaborate and create something extraordinary together! Let's connect and bring your digital visions to life.</p>
+      
+        <p>Welcome to my portfolio! <span class="highlight">I'm a BCA student deeply passionate about web development</span>. I thrive on transforming ideas into visually appealing and fully functional websites. What sets me apart is my relentless pursuit of learning, ensuring that I stay ahead in this ever-evolving field. My approach emphasizes understanding client requirements and delivering exceptional results. Explore my projects and skills to see how we can collaborate and create something extraordinary together! Let's connect and bring your digital visions to life.</p>
       </div>
     </div>
   </section>
@@ -81,7 +85,8 @@
       <h2 class="card-h2">Ongoing Project</h2>
       <div class="card-container">
         <div class="card">
-            <img src="spotify-card.webp">Spotify Clone</p>
+            <img src="spotify-card.webp">
+            <button class="btn-3"><a href="https://ayushrajjj.github.io/spotify-clone/">spotify clone</a></button>
             <p class="card-info">Made the clone of Spotify website using HTML & CSS...</p>
           </div>
         <div class="card">
@@ -136,6 +141,14 @@
         const navItems = document.getElementById('navItems');
         navItems.classList.toggle('active');
     }
+
+        gsap.from(".img",{
+    delay:0.4,
+    opacity:0,
+    duration:1,
+    x:60
+})
 </script>
+
 </body>
 </html>
