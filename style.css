@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     margin: 0;
     padding: 0;
-    font-family: cursive;
+    font-family:playfair Display;
 }
 
 /* General styles */
 body {
-    background-color: #f5f5f5;
+    background-color: #000;
     color: #333;
 }
 
@@ -81,8 +82,9 @@ nav {
 }
 /* Hero section */
 .home {
-    min-height: 95vh;
-    background: white;
+    min-height: 100vh;
+    background: black;
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 2em;
@@ -94,18 +96,33 @@ nav {
     max-width: 800px;
 }
 
+/*typewriting effect*/
+.home-content, .name h2 {
+    overflow: hidden; /* Ensures the text will be hidden when not typed out */
+    border-right: 0.15em solid blueviolet; /* Creates a cursor effect */
+    white-space: nowrap; /* Prevents the text from wrapping to the next line */
+    margin: 0 auto; /* Centers the element */
+    letter-spacing: 0.15em; /* Adds some spacing between the letters */
+    animation: typing 3.1s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: blueviolet; }
+}
+
 .home-content h3 {
-    color: black;
-    font-size: 42px;
+    color: white;
+    font-size: 24px;
 }
 
-.name, h3:hover {
+ .home-content .name{
     color: blueviolet;
-}
-
-.home-content p {
-    margin-top: 20px;
-    font-size: 20px;
 }
 
 .btn-box {
@@ -121,7 +138,7 @@ nav {
     color: black;
     border: 2px solid black;
     border-radius: 8px;
-    font-size: 10px;
+    font-size: 18px;
     letter-spacing: 1px;
     font-weight: 600;
     transition: 0.3s ease;
@@ -133,6 +150,10 @@ nav {
     background-color: blueviolet;
     color: white;
     transition: 0.3s ease-in;
+}
+
+.highlight{
+    color:blueviolet;
 }
 
 .img-box {
@@ -225,8 +246,8 @@ nav {
 
 /* Projects section */
 .projects {
-    background: #fff;
-    color: black;
+    background: black;
+    color: white;
     padding: 20px;
 }
 
@@ -237,7 +258,7 @@ nav {
 }
 
 .card {
-    background-color: rgb(199, 224, 241);
+    background: blueviolet;
     border-radius: 0.5rem;
     padding: 1rem;
     flex: 1 1 300px;
@@ -253,6 +274,19 @@ nav {
     text-align: center;
 }
 
+.btn-3{
+    padding: 15px 20px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    font-weight: 200;
+}
 .card-info {
     text-align: center;
 }
